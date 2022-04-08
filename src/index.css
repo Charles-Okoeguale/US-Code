@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Padauk&display=swap');
+
+.App{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(107, 52, 107);
+}
+
+.zipcode{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: rgb(160, 44, 160);
+  padding: 0.5em 1.2em;
+  border-radius: 4rem;
+}
+
+.zipcode input{
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 20rem;
+  font-size: 1.6rem;
+  font-family: monospace;
+  padding: 1.2rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.2rem;
+  color: white;
+}
+
+.zipcode label{
+  position: absolute;
+  top: 1.2rem;
+  left: 2.5rem;
+  font-size: 1.4rem;
+  color: white;
+  font-family: monospace;
+  user-select: none;
+  transition: 0.3s;
+}
+
+
+.zipcode input:focus + label, 
+.zipcode input:valid + label{
+  transform: translateY(-0.8rem);
+  font-size: 1.2rem;
+}
+
+.zipcode .indicator{
+  display: flex;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background: white;
+  border-radius: 50%;
+}
+
+.zipcode .indicator .ri{
+  font-size: 3.5rem;
+  margin: auto auto;
+}
+
+.info{
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: monospace;
+}
