@@ -35,7 +35,7 @@
   position: absolute;
   top: 1.2rem;
   left: 2.5rem;
-  font-size: 1.4rem;
+  font-size: 1.0rem;
   color: white;
   font-family: monospace;
   user-select: none;
@@ -44,9 +44,9 @@
 
 
 .zipcode input:focus + label, 
-.zipcode input:valid + label{
+.zipcode input:focus + label{
   transform: translateY(-0.8rem);
-  font-size: 1.2rem;
+  font-size: 1.0rem;
 }
 
 .zipcode .indicator{
